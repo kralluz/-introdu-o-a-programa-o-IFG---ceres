@@ -1,6 +1,22 @@
 #include <iostream>
+using namespace std;
+int main()
+{
+    float num1, num2;
 
-int main(int argc, char** argv){
-    std::cout << "digite a operação matemática ";
+    //Recebendo os dados
+    cout << "Primeiro numero: ";
+    cin >> num1;
+
+    cout << "Segundo numero: ";
+    cin >> num2;
+
+    //Exibindo as operações
+    cout << "Soma         : " << num1 + num2 << endl;
+    cout << "Subtracao    : " << num1 - num2 << endl;
+    cout << "Multiplicacao: " << num1 * num2 << endl;
+    cout << "Divisao      : " << num1 / num2 << endl;
+
     return 0;
 }
+>>>>>>> 5999d8f7b1e90f90eeef9d7d06763a68bf03782e
