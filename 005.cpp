@@ -25,4 +25,5 @@ int main()
     cout << "O produto " << nameproduct << " tem um custo de mercado de R$" << custo << " e o preço final é de R$" << precofinal << endl;
 
     return 0;
+    
 }
