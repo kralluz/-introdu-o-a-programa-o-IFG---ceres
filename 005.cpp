@@ -16,7 +16,7 @@ int main()
     cout << "Qual o seu nome do produto?\n";
     getline(cin, nameproduct); // Utiliza a função getline para ler o nome do usuário com espaços em branco
 
-    cout << "Digite o cursto de mercado do produto!\n";
+    cout << "Digite o custo de mercado do produto!\n";
     cin >> custo; // Lê as notas bimestrais do usuário
     
     cout << "Digite o a margem de lucro desejada sobre o produto em porcentagem!\n";
