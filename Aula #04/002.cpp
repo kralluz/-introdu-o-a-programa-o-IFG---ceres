@@ -12,17 +12,17 @@ trabalhada; */
 
     int main()
     {
-        float horas_trabalhadas, valor_salario_minimo, salario_bruto;
+        float horas_trabalhadas, valor_salario_minimo, salario_bruto, salario_final, imposto, valor_hora_trabalhadas;
 
         cout << "Quantas horas trabalhadas?\n";
         cin >> horas_trabalhadas;
         cout << "Qual o valor do Salário minimo?\n";
         cin >> valor_salario_minimo;
 
-        float valor_hora_trabalhadas = valor_salario_minimo / 5;
+        valor_hora_trabalhadas = valor_salario_minimo / 5;
         salario_bruto = horas_trabalhadas*valor_hora_trabalhadas;
-        float imposto = salario_bruto*0.03;
-        float salario_final = salario_bruto-imposto;
+        imposto = salario_bruto*0.03;
+        salario_final = salario_bruto-imposto;
 
         cout <<"O salário a receber por um funcionário é R$"<<salario_final<<endl;
 
