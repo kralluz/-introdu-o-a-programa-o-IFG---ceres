@@ -18,21 +18,34 @@ sabendo que:
 #include <cmath>
 using namespace std;
 
-    int main() {
+int main() {
+    float altura, raio, area, qtd_tinta, qtd_latas, custo;
+    const float LITROS_POR_LATA = 5, PRECO_POR_LATA = 50;
+    const float COBERTURA_POR_LITRO = 3, CM_POR_M = 100;
 
-    float altura, raio, latas_tinta, custo_total;
-    // Declaração das variáveis
-    float ;
-
-    // Solicita ao usuário a altura e o raio do cilindro em centímetros
-    cout << "Informe a altura do cilindro em centimetros: ";
+    // Entrada de dados
+    cout << "Informe a altura do cilindro em cm: ";
     cin >> altura;
-    cout << "Informe o raio do cilindro em centimetros: ";
+    cout << "Informe o raio do cilindro em cm: ";
     cin >> raio;
 
+    // Cálculo da área
+    area = 2 * M_PI * raio * altura + 2 * M_PI * pow(raio, 2);
 
-    // Exibe o resultado na tela
-    cout << "Para pintar o cilindro serão necessárias " << latas_tinta << " latas de tinta, com um custo total de R$" << custo_total << endl;
+    // Cálculo da quantidade de tinta necessária
+    qtd_tinta = area / CM_POR_M / COBERTURA_POR_LITRO;
+
+    // Cálculo da quantidade de latas necessárias
+    qtd_latas = ceil(qtd_tinta / LITROS_POR_LATA);
+
+    // Cálculo do custo
+    custo = qtd_latas * PRECO_POR_LATA;
+
+    // Saída de resultados
+    cout << "Área do cilindro: " << area << " cm²" << endl;
+    cout << "Quantidade de tinta necessária: " << qtd_tinta << " litros" << endl;
+    cout << "Quantidade de latas necessárias: " << qtd_latas << endl;
+    cout << "Custo total: R$ " << custo << endl;
 
     return 0;
-    }
+}
