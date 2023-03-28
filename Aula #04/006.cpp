@@ -19,6 +19,8 @@ sabendo que:
 using namespace std;
 
     int main() {
+
+    float altura, raio, latas_tinta, custo_total;
     // Declaração das variáveis
     float ;
 
