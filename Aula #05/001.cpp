@@ -8,7 +8,7 @@ float x1, x2, y1, y2; // Esta linha declara as quatro variáveis que vão armaze
 
 cout << "Digite os valores de x1, x2, y1, y2 separados por um espaço " << endl; // Esta linha imprime uma mensagem pedindo que o usuário digite as coordenadas dos pontos.
 cin >> x1 >> x2 >> y1 >> y2; // Esta linha lê as coordenadas dos pontos digitadas pelo usuário e armazena nas respectivas variáveis.
-
+3
 float dx = x2 - x1; // Esta linha calcula a diferença entre as coordenadas x dos pontos P e Q e armazena na variável dx.
 float dy = y2 - y1; // Esta linha calcula a diferença entre as coordenadas y dos pontos P e Q e armazena na variável dy.
 
