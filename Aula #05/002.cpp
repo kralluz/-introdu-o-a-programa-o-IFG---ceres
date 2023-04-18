@@ -18,7 +18,7 @@ cin>>h;
 cout<<"informe o tamanho da escada\n"<<endl;
 cin>>e;
 
-d = (h*h+e*e)
+d = (h*h+e*e);
 
 cout << "A distância em que a escadda deve estar da parede é de "<< d <<endl;
 
