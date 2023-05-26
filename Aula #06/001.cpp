@@ -4,7 +4,11 @@ using namespace std;
 
 int main()
 {
-    int a = 2, b = 5, c = 3, d = 3, e = 4;
+    int a, b, c, d, e;
+
+    cout << "digite os valores de a, b, c, d, e" << endl;
+    cin >> a >> b >> c >> d >> e;
+    
     if (a == 2) {
         cout << "Laranja ";
         if (b == 5) {
@@ -28,6 +32,6 @@ int main()
         }
     }
     
-    cout << "Abacate";
+    cout << "Pitanga";
     return 0;
 }
