@@ -10,7 +10,7 @@ int main()
     {
         maca = 0;
         morango = 0;
-        preco = 0
+        preco = 0;
         continuar = 0;
 
         cout << "deu quantos kilos de maca?" << endl;
@@ -41,6 +41,7 @@ int main()
         cout << "continuar comprando?" << endl;
         cout << "[1]Sim   [-]Nao" << endl;
         cin >> continuar;
+        cout << endl;
     }
 
 }
