@@ -4,12 +4,12 @@ using namespace std;
 
 
 // Construa um programa em C++ que calcule o valor dos dez primeiros termos da série H, em que:
-// H = (1 / 13) - (1 / 33) + (1 / 53) - (1 / 73) + (1 / 93)
+// H = (1 / 1)³ - (1 / 3)³ + (1 / 5)³ - (1 / 7)³ + (1 / 9)³
 
 
 int main() {
 
-float denominador = 13 ;    
+float denominador = 1 ;    
 float numerador = 1;
 int pairOrEven = 1;
 float H;
@@ -19,24 +19,28 @@ float PrimeiraOP;
 float SegundaOP;
 
 
-    for (int contador = 0; contador <= 10; contador++){
+    for (int contador = 1; contador < 11; contador++){
         
         //ímpar ou par 
-        if(pairOrEven % 2 ) { // SE FOR PAR
-            PrimeiraOP = numerador / denominador; //
-            denominador = denominador + 20;
+        if(pairOrEven % 2 == 0 ) { // SE FOR PAR
+            cout << denominador << endl;
+            PrimeiraOP = numerador / denominador; 
+            denominador = (denominador + 2);
+            denominador = denominador * denominador * denominador;
             SegundaOP = numerador / denominador;
             H = PrimeiraOP - SegundaOP;
-            cout <<"na " << contador <<  " vez, H vale:" << H << endl;
+            cout <<"na " << contador <<  "° vez, H vale:" << H << endl;
+
 
 
         }else { // SE FOR ÍMPAR
-            PrimeiraOP = numerador / denominador; //
-            denominador = denominador + 20;
+            cout << denominador << endl;
+            PrimeiraOP = numerador / denominador; 
+            denominador = (denominador + 2);
+            denominador = denominador * denominador * denominador;
             SegundaOP = numerador / denominador;
             H = PrimeiraOP + SegundaOP;
-            cout <<"na " << contador <<  " vez, H vale:" << H << endl;
-
+            cout <<"na " << contador <<  "° vez, H vale:" << H << endl;
         }
 
 
