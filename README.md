@@ -14,4 +14,4 @@ Este repositório contém materiais e exercícios do curso de Introdução à Pr
 Para utilizar os materiais deste repositório, clone-o em seu ambiente local usando o seguinte comando Git:
 
 ```bash
-git clone [URL-do-seu-repositório]
+git clone [https://github.com/kralluz/IFG_Campus_Ceres-L-gica_de_Programa-o/tree/main]
